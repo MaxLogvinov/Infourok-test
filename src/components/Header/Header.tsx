@@ -5,11 +5,7 @@ function Header() {
     <header className="header">
       <div className="header__logo">
         <a href="/">
-          <img
-            className="header__logo-img"
-            src="../../../public/surface1.svg"
-            alt="логотип компании Инфоурок"
-          />
+          <img className="header__logo-img" src="surface1.svg" alt="логотип компании Инфоурок" />
         </a>
         <h3 className="header__logo-heading">Логотип</h3>
       </div>
