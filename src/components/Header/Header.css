@@ -31,14 +31,14 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   margin: 0;
-  color: #fff;
+  color: var(--white);
   padding: 8px 15px 0 8px;
 }
 
 .header__list {
   grid-area: list;
   list-style: none;
-  color: #fff;
+  color: var(--white);
   display: flex;
   margin: 0;
   gap: 65px;
@@ -73,14 +73,14 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  color: #ffde00;
+  color: var(--yellow);
   padding: 0 4px;
 }
 
 .header__button {
   padding: 0;
   grid-area: button;
-  color: #000;
+  color: var(--black);
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 600;
@@ -89,8 +89,8 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  background-color: #fff;
-  border: 1px solid #ffde00;
+  background-color: var(--white);
+  border: 1px solid var(--yellow);
   border-radius: 4px;
   width: 161px;
   height: 50px;
@@ -102,7 +102,7 @@
 
 @media (hover: hover) and (pointer: fine) {
   .header__button:hover {
-    background-color: #ffde00;
+    background-color: var(--yellow);
   }
 }
 
@@ -161,6 +161,6 @@
   }
 
   .header__button:active {
-    background-color: #ffde00;
+    background-color: var(--yellow);
   }
 }

@@ -1,0 +1,228 @@
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content__container {
+  display: flex;
+  flex-direction: column;
+  padding: 59px 0 0 57px;
+}
+
+.content__title {
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 57.6px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+  width: 532px;
+}
+
+.content__title_accent {
+  color: var(--yellow);
+}
+
+.content__heading {
+  margin: 0;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+}
+
+.content__media-container {
+  display: flex;
+}
+
+.content__button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 0;
+  gap: 3px;
+}
+
+.content__price {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43.2px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.content__ruble {
+  position: absolute;
+  background: url(/Ruble.svg) no-repeat center;
+  display: inline-block;
+  width: 22px;
+  height: 25px;
+  top: 40%;
+  right: -3%;
+  z-index: 1;
+}
+
+.content__circle-container {
+  position: relative;
+  width: 84px;
+  height: 96px;
+}
+
+.content__circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 58px;
+  height: 58px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.content__circle::before,
+.content__circle::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--orange);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.content__circle::before {
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  animation-delay: 0.5s;
+}
+
+.content__circle::after {
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  animation-delay: 1s;
+}
+
+.content__button {
+  padding: 0;
+  border: 0;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: var(--black);
+  width: 266px;
+  height: 60px;
+  background: var(--yellow);
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0px -2px 2px 0px #00000040 inset;
+  box-shadow: 0px 0px 30px 0px #ffde0059;
+  cursor: url('/Cursor.svg'), pointer;
+  transition: all 0.5s ease;
+  margin-top: 45px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .content__button:hover {
+    background: var(--yellow-hover);
+    box-shadow: 0px -2px 2px 0px #00000040 inset;
+  }
+}
+
+.content__info-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 0 47px;
+  gap: 30px;
+}
+
+.content__info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.content__info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: var(--orange);
+}
+
+.content__info-item {
+  position: relative;
+  color: var(--white);
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.8px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-left: 17px;
+}
+
+.content__info-item_heading {
+  color: var(--gray);
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
