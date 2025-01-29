@@ -1,11 +1,12 @@
 .header {
   width: 100%;
+  max-width: 1440px;
   display: grid;
   grid-template-areas: 'logo list button';
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2.5fr 1fr;
   align-content: center;
   justify-items: center;
-  gap: 20px;
+  gap: 0;
   padding: 20px 0 26px 0;
 }
 
@@ -31,7 +32,7 @@
   text-decoration-skip-ink: none;
   margin: 0;
   color: #fff;
-  padding: 8px 0 0 8px;
+  padding: 8px 15px 0 8px;
 }
 
 .header__list {
@@ -39,9 +40,9 @@
   list-style: none;
   color: #fff;
   display: flex;
-  gap: 64px;
   margin: 0;
-  padding: 0 99px;
+  gap: 65px;
+  padding: 7px 0 0 32px;
 }
 
 .header__list-item {
@@ -96,6 +97,7 @@
   text-align: center;
   cursor: url('/Cursor.svg'), pointer;
   transition: background 0.3s ease;
+  margin-left: 68px;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -104,20 +106,16 @@
   }
 }
 
-@media screen and (max-width: 1830px) {
-  .header__list {
-    gap: 40px;
-    padding: 0 25px;
-  }
-}
-
 @media screen and (max-width: 1439px) {
   .header {
     gap: 10px;
   }
   .header__list {
-    gap: 30px;
-    padding: 0 15px;
+    gap: 35px;
+    padding: 7px 0 0 2px;
+  }
+  .header__button {
+    margin-left: 0;
   }
 }
 
@@ -128,7 +126,7 @@
   }
   .header__list {
     gap: 10px;
-    padding: 0;
+    padding: 7px 0 0 0;
   }
   .header__logo-img {
     width: 44px;
