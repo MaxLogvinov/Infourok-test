@@ -1,50 +1,57 @@
-# React + TypeScript + Vite
+# Проект: Семантическая адаптивная верстка страницы по макету
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект демонстрирует навыки семантической и адаптивной верстки. Основное внимание уделено кроссбраузерности, соответствию современным стандартам HTML5 и использованию чистого CSS для стилизации. Интерфейс адаптирован для работы на экранах шириной от 360 пикселей.
 
-Currently, two official plugins are available:
+## Технологии и инструменты
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: библиотека для создания пользовательских интерфейсов.
+- **Vite**: инструмент для сборки, обеспечивающий быструю разработку.
+- **CSS**: чистая каскадная таблица стилей для стилизации элементов.
+- **HTML5 и семантическая верстка**: создание структурированного и доступного HTML.
+- **Кроссбраузерность**: проверена совместимость в современных браузерах.
 
-## Expanding the ESLint configuration
+## Функциональность
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1.  **Отображение таблицы результатов**, Использование тегов семантических тегов для улучшения доступности и SEO.
+2.  **Адаптивный дизайн** Оптимизирован для экранов от 360px и выше. Использованы гриды и флексы.
+3.  **Кроссбраузерность** Совместимость проверена в Chrome, Firefox, Safari, Яндекс.Браузер.
 
-- Configure the top-level `parserOptions` property like this:
+## Установка и запуск проекта
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Клонируйте репозиторий:
+   ```bash
+   git clone git@github.com:MaxLogvinov/Infourok-test.git
+   cd Infourok-test
+   ```
+2. Установите зависимости:
+   ```sh
+   npm install
+   # или
+   yarn install
+   ```
+
+### Запуск приложения
+
+Для запуска сервера разработки выполните:
+
+```sh
+npm run dev
+# или
+yarn dev
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Приложение будет доступно по адресу http://localhost:5173.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Деплой на GitHub Pages
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**[Ссылка на сайт](https://maxlogvinov.github.io/farwater-test/)**
+
+#### Задача
+
+Проект является демонстрацией навыков для выполнения тестового задания:
+
+- Семантическая и адаптивная верстка.
+- Использование CSS для стилизации.
+- Реализация современного дизайна.
+
+**[Макет Figma](https://www.figma.com/design/mwhaNzl9TxJx9WXZVG8CSW/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5?node-id=0-1&t=zgqYcavduEAZeqPj-1)**
