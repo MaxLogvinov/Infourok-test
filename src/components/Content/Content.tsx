@@ -39,7 +39,7 @@ function Content() {
           <div className="content__image-container">
             <img
               className="content__image"
-              src="/students.png"
+              src="/Infourok-test/students.png"
               alt="два счастливых выпускника"
               loading="lazy"
             />
