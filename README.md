@@ -44,7 +44,7 @@ yarn dev
 
 ### Деплой на GitHub Pages
 
-**[Ссылка на сайт](https://maxlogvinov.github.io/farwater-test/)**
+**[Ссылка на сайт](https://maxlogvinov.github.io/Infourok-test/)**
 
 #### Задача
 
