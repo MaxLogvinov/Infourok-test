@@ -35,6 +35,18 @@ function Content() {
             </div>
           </div>
         </div>
+        <div className="content__container">
+          <div className="content__image-container">
+            <img
+              className="content__image"
+              src="/students.png"
+              alt="два счастливых выпускника"
+              width={523}
+              height={532}
+              loading="lazy"
+            />
+          </div>
+        </div>
       </section>
     </main>
   );

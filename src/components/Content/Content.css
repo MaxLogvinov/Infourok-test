@@ -23,13 +23,13 @@
 .content {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content__container {
   display: flex;
   flex-direction: column;
-  padding: 59px 0 0 57px;
+  padding: 59px 0 50px 57px;
 }
 
 .content__title {
@@ -225,4 +225,37 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+}
+
+.content__image-container {
+  position: relative;
+  width: 523px;
+  height: 532px;
+  padding: 18px 8px 0 0;
+}
+
+.content__image-container::before {
+  content: '';
+  position: absolute;
+  top: -44px;
+  left: -65px;
+  width: 747px;
+  height: 615px;
+  background: url(/public/Vector.png) no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.content__image {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1630px) {
+  .content__image-container::before {
+    display: none;
+  }
+  .content {
+    background: url(/public/Vector.png) no-repeat 712px 15px;
+  }
 }
