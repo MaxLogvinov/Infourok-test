@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1310px;
   display: grid;
   grid-template-areas: 'logo list button';
   grid-template-columns: 1fr 2.5fr 1fr;

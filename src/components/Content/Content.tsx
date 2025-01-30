@@ -48,6 +48,7 @@ function Content() {
           </div>
         </div>
       </section>
+      <div className="main__triangle"></div>
     </main>
   );
 }
