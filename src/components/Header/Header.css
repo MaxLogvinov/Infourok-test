@@ -159,7 +159,9 @@
     padding: 20px 10px 0 0;
     gap: 23px 40px;
   }
-
+  .header__button {
+    margin-right: 6px;
+  }
   .header__button:active {
     background-color: var(--yellow);
   }

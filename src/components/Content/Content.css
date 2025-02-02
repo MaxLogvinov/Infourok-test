@@ -373,6 +373,7 @@
   .content {
     flex-direction: column;
     align-items: center;
+    position: relative;
   }
   .content__container {
     align-items: center;
@@ -404,11 +405,11 @@
   .content__info-container {
     position: relative;
   }
-  .content__info-container::after {
+  .content::after {
     content: '';
     position: absolute;
-    top: 66px;
-    right: -85px;
+    top: 180px;
+    right: 0;
     width: 120px;
     height: 236px;
     background: url(/oneStudent.png) no-repeat;
@@ -422,6 +423,10 @@
     height: 49px;
     clip-path: polygon(0% 100%, 100% 100%, 100% calc(100% - 49px));
   }
+  .content::after {
+    top: 324px;
+  }
+
   .content__container {
     padding: 5px 0 0 0;
     width: 100%;
@@ -462,9 +467,5 @@
   }
   .content__info {
     gap: 9px;
-  }
-  .content__info-container::after {
-    top: 50px;
-    right: 0px;
   }
 }
